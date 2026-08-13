@@ -83,7 +83,8 @@ def call_handeling(call):
 
     bot.send_message(
         call.message.chat.id,
-        f"متن مورد نظر خود را برای ترجمه به {lang_name} ارسال کنید.",
+        f"متن مورد نظر خود را برای ترجمه به *{lang_name}* ارسال کنید.",
+        parse_mode="Markdown",
     )
 
     bot.register_next_step_handler(
